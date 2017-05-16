@@ -371,7 +371,10 @@ static CGFloat const kDefaultCloseDragOffsetPercentage = .05;
 }
 
 - (void)unregisterFromScrollViewKVO:(UIScrollView *)scrollView {
+	@try{
 	[scrollView removeObserver:self forKeyPath:@"contentOffset"];
+	} @catch(id anException){
+    	}
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
