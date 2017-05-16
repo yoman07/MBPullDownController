@@ -13,7 +13,7 @@
 
 
 static CGFloat const kDefaultClosedTopOffset = 44.f;
-static CGFloat const kDefaultOpenBottomOffset = 44.f;
+static CGFloat const kDefaultOpenBottomOffset = 130.f;
 static CGFloat const kDefaultOpenDragOffset = NAN;
 static CGFloat const kDefaultCloseDragOffset = NAN;
 static CGFloat const kDefaultOpenDragOffsetPercentage = .2;
